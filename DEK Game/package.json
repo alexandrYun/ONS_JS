@@ -1,0 +1,29 @@
+{
+  "name": "game",
+  "version": "0.0.1",
+  "description": "RPG game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandrYun/ONS_JS.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandrYun/ONS_JS/issues"
+  },
+  "homepage": "https://github.com/alexandrYun/ONS_JS#readme",
+  "devDependencies": {
+    "ts-loader": "^8.0.7",
+    "webpack": "^5.2.0"
+  },
+  "dependencies": {
+    "typescript": "^4.0.5"
+  }
+}
