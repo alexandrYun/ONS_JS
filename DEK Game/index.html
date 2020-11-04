@@ -9,5 +9,78 @@
 </head>
 <body>
     <h1 class="title">Dvarf Elf Knight (DEK)</h1>
+
+    <div class="enemys-wrapper">
+        <div class="knight-wrapper">
+            <div class="pers-creator">
+                <input type="text" class="knight-name" placeholder="Имя Рыцаря">
+                <button class="knight-create">Создать Рыцаря</button>
+            </div>
+            <div class="methods-wrapper">
+                <div class="atk-wrapper">
+                    <select name="knight-atk-targets" class="knight-atk-select">
+                        <option value="Пусто">---</option>
+                        <option value="Дварф">Дварф</option>
+                        <option value="Эльф">Эльф</option>
+                    </select>
+                    <button class="k-atk">Атака</button>
+                </div>
+                <button class="k-scr">Клич!</button>
+                <button class="k-ult">Атаковать всех</button>
+            </div>
+        </div>
+
+        <div class="dwarf-wrapper">
+            <div class="pers-creator">
+                <input type="text" class="dwarf-name" placeholder="Имя Дварфа"">
+                <button class="dwarf-create">Создать Дварфа</button>
+            </div>
+            <div class="methods-wrapper">
+                <div class="atk-wrapper">
+                    <select name="dwarf-atk-targets" class="dwarf-atk-select">
+                        <option value="Пусто">---</option>
+                        <option value="Рыцарь">Рыцарь</option>
+                        <option value="Эльф">Эльф</option>
+                    </select>
+                    <button class="d-atk">Атака</button>
+                </div>
+                <button class="d-scr">Клич!</button>
+                <div class="ult-wrapper">
+                    <select name="dwarf-targets" class="dwarf-select">
+                        <option value="Пусто">---</option>
+                        <option value="Рыцарь">Рыцарь</option>
+                        <option value="Эльф">Эльф</option>
+                    </select>
+                    <button class="d-ult">Атака топором</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="elf-wrapper">
+            <div class="pers-creator">
+                <input type="text" class="elf-name" placeholder="Имя Эльфа"">
+                <button class="elf-create">Создать Эльфа</button>
+            </div>
+            <div class="methods-wrapper">
+                <div class="atk-wrapper">
+                    <select name="elf-atk-targets" class="elf-atk-select">
+                        <option value="Пусто">---</option>
+                        <option value="Рыцарь">Рыцарь</option>
+                        <option value="Дварф">Дварф</option>
+                    </select>
+                    <button class="e-atk">Атака</button>
+                </div>
+                <button class="e-scr">Клич!</button>
+                <div class="ult-wrapper">
+                    <select name="elf-targets" class="elf-select">
+                        <option value="Пусто">---</option>
+                        <option value="Рыцарь">Рыцарь</option>
+                        <option value="Дварф">Дварф</option>
+                    </select>
+                    <button class="e-ult">Магическая атака</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

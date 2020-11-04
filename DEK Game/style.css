@@ -1,3 +1,48 @@
 .title {
     text-align: center;
 }
+
+.enemys-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.knight-wrapper, .dwarf-wrapper, .elf-wrapper {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.methods-wrapper {
+    display: flex;
+    column-gap: 25px;
+}
+
+.knight-name, .dwarf-name, .elf-name {
+    height: 30px;
+}
+
+button {
+    cursor: pointer;
+    height: 35px;
+}
+
+.knight-create, .dwarf-create, .elf-create {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.knight-create {
+    background-color: red;
+}
+
+.dwarf-create {
+    background-color: grey;
+}
+
+.elf-create {
+    background-color: blue;
+}

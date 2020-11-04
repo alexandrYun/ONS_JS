@@ -1,3 +1,5 @@
+import {knight, elf, dwarf} from './script';
+
 export default class Enemy {
     name: string;
     hp: number;
@@ -12,9 +14,18 @@ export default class Enemy {
         this.damage = damage;
         this.range = range;
     }
-    Attack(target: number, range: number) {
-        targets[target].hp -= this.damage;
-        console.log(range);
+    attack(target: string) {
+        if(target === 'Рыцарь' && this.range >= 20) {
+            knight.getDamage(this.damage);
+        } else if(target === 'Эльф' && this.range >= 30) {
+            elf.getDamage(this.damage);
+        } else if(target === 'Дварф' && this.range >= 10) {
+            dwarf.getDamage(this.damage);
+        } else if(target === 'Пусто') {
+            console.log('Нужно выбрать цель');
+        } else {
+            console.log('Слишком далеко');
+        }
     }
     getDamage(damage: number) {
         this.hp -= damage;
@@ -24,12 +35,3 @@ export default class Enemy {
     }
 }
 
-let targets: any = [
-    {name: 'target1', hp: 50, targetRange: 20, targetDamage: 5},
-    {name: 'target2', hp: 50, targetRange: 30, targetDamage: 5},
-    {name: 'target3', hp: 50, targetRange: 10, targetDamage: 5},
-    {name: 'target4', hp: 50, targetRange: 20, targetDamage: 5},
-    {name: 'target5', hp: 50, targetRange: 30, targetDamage: 5},
-    {name: 'target6', hp: 50, targetRange: 30, targetDamage: 5},
-    {name: 'target7', hp: 50, targetRange: 20, targetDamage: 5}
-]
